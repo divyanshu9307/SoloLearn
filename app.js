@@ -30,7 +30,7 @@ app.get("/:id/course/view", (req, res) => {
     res.render("courseView");
 })
 
-app.get("/:id/course/desciption", (req, res) => {
+app.get("/:id/course/description", (req, res) => {
     res.render("courseDescription");
 })
 
