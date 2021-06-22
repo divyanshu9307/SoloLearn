@@ -41,12 +41,17 @@ app.get("/:id/course/view", async (req, res) => {
     res.render("courseView", { course });
 })
 
+<<<<<<< main
+app.get("/:id/course/description", (req, res) => {
+    res.render("courseDescription");
+=======
 app.get("/:id/course/description", async (req, res) => {
     const course = await Courses.findById(req.params.id);
     if (!course) {
         res.send("Cannot find the required Course");
     }
     res.render("courseDescription", { course });
+>>>>>>> main
 })
 
 app.get("/", async (req, res) => {
